@@ -1,0 +1,10 @@
+export const CHANGE_METHOD = "CHANGE_METHOD";
+export const CHANGE_URL = "CHANGE_URL";
+export const CHANGE_BODY = "CHANGE_BODY";
+export const CHANGE_PARAM = "CHANGE_PARAM";
+export const CHANGE_HEADER = "CHANGE_HEADER"
+export const ADD_PARAMS = "ADD_PARAMS";
+export const ADD_HEADERS = "ADD_HEADERS";
+export const DELETE_PARAMS = "DELETE_PARAMS";
+export const DELETE_HEADERS = "DELETE_HEADERS";
+export const SET_RESPONSE = "SET_RESPONSE";
