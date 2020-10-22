@@ -3,13 +3,13 @@ import { Button, KIND, SHAPE } from 'baseui/button';
 import { Input } from 'baseui/input';
 import { Select, SIZE, TYPE } from 'baseui/select';
 import * as React from 'react';
-import { AxiosExecute } from '../helpers/AxiosExecute';
-import { transformForAxios } from '../helpers/AxiosTransformer';
-import { changeMethod, changeUrl, setResponse } from '../store/method/methodActions';
-import { useMethodDispatch, useMethodSelector } from '../store/method/MethodContext';
+import { AxiosExecute } from '../../helpers/AxiosExecute';
+import { transformForAxios } from '../../helpers/AxiosTransformer';
+import { changeMethod, changeUrl, setResponse } from '../../store/method/methodActions';
+import { useMethodDispatch, useMethodSelector } from '../../store/method/MethodContext';
 
 
-const RequestEndPoint = () => {
+const TryRequestEndPoint = () => {
 
     const url = useMethodSelector(state => state.url);
 
@@ -63,4 +63,4 @@ const RequestEndPoint = () => {
     </Block>);
 };
 
-export default RequestEndPoint;
+export default TryRequestEndPoint;

@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { Tabs, Tab, ORIENTATION } from 'baseui/tabs';
 import { Block } from 'baseui/block';
-import { useMethodSelector } from '../store/method/MethodContext';
-import LazyAceEditor from './core/LazyCodeEditor';
-import ResponseHeaders from './ResponseHeaders';
+import { useMethodSelector } from '../../store/method/MethodContext';
+import LazyAceEditor from '../core/LazyCodeEditor';
+import TryResponseHeaders from './TryResponseHeaders';
 
-const Response = () => {
+const TryResponse = () => {
 
     const [activeKey, setActiveKey] = React.useState("0");
 
@@ -44,11 +44,11 @@ const Response = () => {
 
                 </Tab>
                 <Tab title="Headers">
-                    <ResponseHeaders headers={response.headers}></ResponseHeaders>
+                    <TryResponseHeaders headers={response.headers}></TryResponseHeaders>
                 </Tab>
             </Tabs>
         </Block>
     </React.Fragment>);
 };
 
-export default Response;
+export default TryResponse;

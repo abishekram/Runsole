@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { Table } from 'baseui/table';
-import { Block } from 'baseui/block';
+import {Table} from 'baseui/table';
+import {Block} from 'baseui/block';
 
-const ResponseHeaders = ({ headers }) => {
+const TryResponseHeaders = ({ headers }) => {
 
     const data = Object.keys(headers)?.map((key, i) => [key, headers[key]])
     return (
@@ -17,4 +17,4 @@ const ResponseHeaders = ({ headers }) => {
         </Block>);
 };
 
-export default ResponseHeaders;
+export default TryResponseHeaders;

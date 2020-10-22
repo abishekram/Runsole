@@ -1,11 +1,11 @@
 import { Block } from 'baseui/block';
 import * as React from 'react';
-import { changeBody } from '../store/method/methodActions';
-import { useMethodDispatch, useMethodSelector } from '../store/method/MethodContext';
-import LazyAceEditor from './core/LazyCodeEditor';
+import { changeBody } from '../../store/method/methodActions';
+import { useMethodDispatch, useMethodSelector } from '../../store/method/MethodContext';
+import LazyAceEditor from '../core/LazyCodeEditor';
 
 
-const RequestBody = () => {
+const TryRequestBody = () => {
 
     const body = useMethodSelector(state => state.body);
 
@@ -39,4 +39,4 @@ const RequestBody = () => {
         </React.Fragment>);
 };
 
-export default RequestBody;
+export default TryRequestBody;
