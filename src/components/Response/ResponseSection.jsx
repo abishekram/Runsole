@@ -9,10 +9,10 @@ const ResponseSection = ({method, resource, type, path}) => {
         <Accordion
             onChange={({expanded}) => console.log(expanded)}
         >
-            <Panel title="Response">
+            <Panel title="Response" expanded={true}>
                 <ResponseView resource={resource} method={method} type={type}
                               path={path}/>
-                <TryResponse/>
+                {/*<TryResponse/>*/}
             </Panel>
         </Accordion>
 

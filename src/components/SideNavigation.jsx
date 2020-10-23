@@ -48,29 +48,8 @@ const SideNavigation = () => {
 
     const sideNav = buildSideNav(api);
 
-    const items = [
-        {
-            title: "Colors",
-            itemId: "#colors",
-            subNav: [
-                {title: "Primary", itemId: "#primary"},
-                {
-                    title: "Shades",
-                    itemId: "#shades",
-                    subNav: [
-                        {title: "Dark", itemId: "#dark"},
-                        {
-                            title: "Disabled",
-                            itemId: "#disabled",
-                            disabled: true
-                        }
-                    ]
-                }
-            ]
-        }
-    ];
     return (
-        <Block width={'300px'}>
+        <Block backgroundColor={'backgroundSecondary'} width={'300px'}>
             <Navigation
                 items={sideNav}
                 activeItemId={activeItemId}

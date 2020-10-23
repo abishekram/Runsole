@@ -15,7 +15,7 @@ const ContentViewer = ({contents}) => {
                 <Block>
                     <Block display={'flex'} flexWrap={true}>
                         {contentTypes.map(s =>
-                            <Block paddingLeft={'0.6rem'}>
+                            <Block paddingRight={'0.6rem'}>
                                 <Button onClick={() => setContent(s)}
                                         isSelected={content === s}>{s}</Button>
                             </Block>)}

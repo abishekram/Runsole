@@ -3,7 +3,7 @@ import {Block} from "baseui/block";
 import APIContext from "./APIContext";
 import {HeadingLevel} from "baseui/heading";
 import RequestSection from "./Request/RequestSection";
-import {HeadingXLarge} from "baseui/typography";
+import {HeadingLarge} from "baseui/typography";
 import ResponseSection from "./Response/ResponseSection";
 
 const ApiMethod = ({method, resource, type, path}) => {
@@ -11,7 +11,7 @@ const ApiMethod = ({method, resource, type, path}) => {
     return (
         <Block>
             <HeadingLevel>
-                <HeadingXLarge>{method.summary}</HeadingXLarge>
+                <HeadingLarge>{method.summary}</HeadingLarge>
                 <RequestSection resource={resource} method={method}
                                 type={type} path={path}/>
 

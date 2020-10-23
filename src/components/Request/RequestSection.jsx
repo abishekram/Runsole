@@ -19,7 +19,7 @@ const RequestSection = ({method, resource, type, path}) => {
                 <Panel title="Request" key="L1">
                     <RequestView resource={resource} method={method} type={type}
                                  path={path}/>
-                    <TryRequest/>
+                    {/*<TryRequest/>*/}
                 </Panel>
             </StatelessAccordion>
 
